@@ -1,0 +1,181 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color:#9f7ae6;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    background-color: #333;
+}
+
+/* Estilo da lista de itens de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilo de cada item da lista no menu */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Estilo dos links dentro dos itens de navegação */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo do link ao passar o mouse */
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo da área principal */
+main {
+    padding: 20px;
+    margin-bottom: 80px;
+    min-height: calc(100vh - 120px);
+}
+
+/* Estilo dos cartões dos desenvolvedores */
+.dev-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dev-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    width: 300px;
+}
+
+/* Estilo para as imagens dos desenvolvedores */
+.dev-card img {
+    width: 150px; /* Largura fixa */
+    height: auto; /* Altura proporcional */
+    border-radius: 50%; /* Formato circular */
+    margin-bottom: 10px;
+}
+
+/* Estilo para o título do desenvolvedor */
+.dev-card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Estilo para o texto de descrição */
+.dev-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Estilo do formulário */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos rótulos do formulário */
+form label {
+    display: inline-block;
+    margin-bottom: 5px;
+    vertical-align: middle;
+}
+
+/* Estilo dos campos de input e textarea dentro do formulário */
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo da caixa de seleção (checkbox) */
+form input[type="checkbox"] {
+    vertical-align: middle;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Estilo do botão dentro do formulário */
+form button {
+    width: auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+/* Estilo do botão ao passar o mouse */
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo dos campos de rádio */
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+/* Estilo do texto do rótulo */
+label {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+}
+
+/* Estilo para as checkboxes de Preferências Alimentares */
+.preferencias-alimentares-container {
+    display: flex;
+    gap: 15px;
+}
+
+.preferencias-alimentares-container div {
+    display: flex;
+    align-items: center;
+}

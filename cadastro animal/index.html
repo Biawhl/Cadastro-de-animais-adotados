@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="estilo.css"> 
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Cadastro de Animais Adotados</h1>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="server.php">Exibir Dados</a></li>
+            <li><a href="desenv.html">Desenvolvedores</a></li>
+        </ul>
+    </nav>
+
+    <!-- Área Principal -->
+    <main>
+        <h2>Adote um Animal!</h2>
+        <form action="server.php" method="post" enctype="multipart/form-data">
+            <!-- Nome do Animal -->
+            <label for="nome">Nome do Animal:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+        
+            <!-- Tipo (Cão, Gato, etc.) -->
+            <label for="tipo">Especie (Cão, Gato, etc.):</label>
+            <input type="text" id="tipo" name="tipo" required><br><br>
+        
+            <!-- Idade -->
+            <label for="idade">Idade (em anos):</label>
+            <input type="number" id="idade" name="idade" required><br><br>
+        
+            <!-- Cor -->
+            <label for="cor">Cor:</label>
+            <input type="text" id="cor" name="cor" required><br><br>
+        
+            <!-- Sexo (Masculino/Feminino) -->
+            <label for="sexo">Sexo:</label>
+            <input type="radio" id="sexo_masculino" name="sexo" value="Masculino" required> Masculino
+            <input type="radio" id="sexo_feminino" name="sexo" value="Feminino"> Feminino<br><br>
+        
+            <!-- Saúde do Animal -->
+            <label for="saude">Saúde do Animal (1 a 10):</label>
+            <input type="range" id="saude" name="saude" min="1" max="10" value="5" step="1">
+            <span id="saude_valor">5</span><br><br>
+        
+            <script>
+                // Atualiza o valor da quando vc mexe a bolinha
+                document.getElementById("saude").addEventListener("input", function() {
+                    document.getElementById("saude_valor").textContent = this.value;
+                });
+            </script>
+        
+            <!-- Descrição -->
+            <label for="descricao">Descrição:</label><br>
+            <textarea id="descricao" name="descricao" rows="4" cols="50"></textarea><br><br>
+        
+            <!-- Foto -->
+            <label for="foto">Foto do Animal:</label>
+            <input type="file" id="foto" name="foto"><br><br>
+        
+            <!-- Data de Nascimento -->
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <input type="date" id="data_nascimento" name="data_nascimento"><br><br>
+        
+            <!-- E-mail de Contato -->
+            <label for="email_contato">E-mail de Contato:</label>
+            <input type="email" id="email_contato" name="email_contato"><br><br>
+        
+            <!-- Telefone -->
+            <label for="telefone">Telefone de Contato:</label>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+        
+            <!-- Preferência Alimentar (checkboxes) -->
+            <label for="preferencias_alimentares">Preferências Alimentares:</label><br>
+            <div class="preferencias-alimentares-container">
+                <div>
+                    <input type="checkbox" id="carne" name="preferencias_alimentares" value="Carne">
+                    <label for="carne">Carne</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="peixe" name="preferencias_alimentares" value="Peixe">
+                    <label for="peixe">Peixe</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="vegetariano" name="preferencias_alimentares" value="Vegetariano">
+                    <label for="vegetariano">Vegetariano</label>
+                </div>
+            </div><br><br>
+        
+            <!-- Submeter o formulário -->
+            <input type="submit" value="Cadastrar" class="btn">
+            <input type="reset" value="Limpar">
+        </form>
+        
+        
+        
+        
+
+        
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>IFRN - Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Equipe: Ana Beatriz Silva de Oliveira, Julia Medeiros Gomes de Oliveira, Mariany da Silva</p>
+    </footer>
+</body>
+</html>
